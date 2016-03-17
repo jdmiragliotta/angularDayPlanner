@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var db = 'mongodb://localhost/dayplanner';
 mongoose.connect(db);
 
-var Day = require('./model/day');
+var Day = require('./model/dayModel');
 
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
